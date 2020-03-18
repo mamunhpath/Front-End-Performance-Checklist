@@ -89,6 +89,8 @@ List of the tools you can use to test or monitor your website or application:
  * 🛠 [Yellow Lab Tools | Online test to help speeding up heavy web pages](https://yellowlab.tools/)
  * 🛠 [Speedrank - Web Performance Monitoring](https://speedrank.app/)
  * 🛠 [DebugBear - Monitor website performance and Lighthouse scores](https://www.debugbear.com/)
+ * 🛠 [packtracker.io - Check your webpack bundle size on every pull request.](https://packtracker.io/)
+ * 🛠 [Exthouse - Analyze the impact of a browser extension on web performance](https://github.com/treosh/exthouse)
  
 ### References
 
@@ -177,6 +179,18 @@ List of the tools you can use to test or monitor your website or application:
     * 📖 [Ordering your styles and scripts for pagespeed](https://varvy.com/pagespeed/style-script-order.html)
 
 - [ ] **Minimize the number of iframes:** ![high] Use iframes only if you don't have any other technical possibility. Try to avoid iframes as much as you can.
+
+- [ ] **Pre-load optimization with prefetch, dns-prefetch and prerender:** ![low] Popular browsers can use directive on `<link>` tag and "rel" attribute with certain keywords to pre-load specific URLs.
+
+    *Why:*
+    > Prefetching allows a browser to silently fetch the necessary resources needed to display content that a user might access in the near future. The browser is able to store these resources in its cache and speed up the way web pages load when they are using different domains for page resources. When a web page has finished loading and the idle time has passed, the browser begins downloading other resources. When a user go in a particular link (already prefetched), the content will be instantly served. 
+
+    *How:*
+    > ⁃ Ensure that `<link>` is in your `<head>` section.
+
+    * 📖 [What Is Prefetching and Why Use It](https://www.keycdn.com/support/prefetching)
+    * 📖 [Prefetching, preloading, prebrowsing](https://css-tricks.com/prefetching-preloading-prebrowsing/)
+    * 📖 [What is Preload, Prefetch, and Preconnect](https://www.keycdn.com/blog/resource-hints)
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -374,6 +388,7 @@ List of the tools you can use to test or monitor your website or application:
     * 🛠 [Kraken.io - Online Image Optimizer](https://kraken.io/web-interface)
     * 🛠 [Compressor.io - optimize and compress JPEG photos and PNG images](https://compressor.io/compress)
     * 🛠 [Cloudinary - Image Analysis Tool](https://webspeedtest.cloudinary.com)
+    * 🛠 [ImageEngine - Image Webpage Loading Test](https://demo.imgeng.in)
     * 🛠 [SVGOMG - Optimize SVG vector graphics files](https://jakearchibald.github.io/svgomg/)
 
 
@@ -489,7 +504,7 @@ List of the tools you can use to test or monitor your website or application:
 
     *How:*
     > If your project use NPM packages, [npm-check](https://www.npmjs.com/package/npm-check) is a pretty interesting library to upgrade / update your libraries.
-    > [Greenkeeper](https://greenkeeper.io/) can automatically look for your dependencies and suggest an update evey time a new version is out.
+    > [Greenkeeper](https://greenkeeper.io/) can automatically look for your dependencies and suggest an update every time a new version is out.
 
     * 📖 [You may not need jQuery](http://youmightnotneedjquery.com/)
     * 📖 [Vanilla JavaScript for building powerful web applications](https://plainjs.com/)
@@ -504,6 +519,7 @@ List of the tools you can use to test or monitor your website or application:
 
     * 🛠 [ai/size-limit: Prevent JS libraries bloat. If you accidentally add a massive dependency, Size Limit will throw an error.](https://github.com/ai/size-limit)
     * 🛠 [webpack-bundle-analyzer - npm](https://www.npmjs.com/package/webpack-bundle-analyzer)
+    * 🛠 [js-dependency-viewer - npm](https://www.npmjs.com/package/js-dependency-viewer)
     * 📖 [Size Limit: Make the Web lighter — Martian Chronicles, Evil Martians’ team blog](https://evilmartians.com/chronicles/size-limit-make-the-web-lighter)
 
 - [ ] **JavaScript Profiling:** ![medium] Check for performance problems in your JavaScript files (and CSS too).
@@ -627,6 +643,7 @@ List of the tools you can use to test or monitor your website or application:
  * 📖 [Debugging React performance with React 16 and Chrome Devtools.](https://building.calibreapp.com/debugging-react-performance-with-react-16-and-chrome-devtools-c90698a522ad)
 
 ### Vue
+ * 📖 [Vue - Useful Links|Style Guide and Performance](https://learn-vuejs.github.io/vue-patterns/useful-links/)
 
 ## Performances and CMS
 
@@ -673,7 +690,7 @@ If you have any question or suggestion, don't hesitate to use Discord or Twitter
 
 ## Author
 
-**Build with ❤️ by [David Dias](https://github.com/thedaviddias) at [@influitive](https://influitive.com/) 🇨🇦**
+**Build with ❤️ by [David Dias](https://github.com/thedaviddias)
 
 ## Contributors
 
